@@ -6,9 +6,12 @@ print (os.getcwd())
 
 conn = sqlite3.connect('SQLite_Python.db')
 c = conn.cursor()
+
+
+
 identificativo = 0
-for n in range (10000):
-	value = random.uniform(0.495, 0.509)
+for m in range (10000):
+	value = random.uniform(0.498, 0.503)
 	identificativo = identificativo + 1
 	x = (identificativo, value)
 	try:
